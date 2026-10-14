@@ -51,7 +51,7 @@ public class GiocaNumeri {
             t1.join();
             t2.join();
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            System.err.println("errore interruzione dell'attesa");
         }
 
         long fine = System.currentTimeMillis();
